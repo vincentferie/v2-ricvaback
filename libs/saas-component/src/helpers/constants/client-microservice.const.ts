@@ -1,0 +1,10 @@
+export const msATH = 'AUTH';
+export const msDSH = 'DASHBOARD';
+export const msSUP = 'SUPERVISION';
+export const msOPS = 'OPERATION';
+export const msFIN = 'FINANCIAL';
+export const msACC = 'ACCOUNTING';
+export const msADM = 'ADMINISTRATION';
+export const msSTC = 'STATISTICS';
+export const msTCK = 'TRACKING';
+export const msFLE = 'FILE';

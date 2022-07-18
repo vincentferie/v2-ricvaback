@@ -1,0 +1,32 @@
+{
+  "apps": [
+    {
+      "name": "ricva.v2-ms-sup",
+      "script": "/home/ricva_back/www/v2/dist/apps/ms-sup/main.js",
+      "merge_logs": false,
+      "watch": true,
+      "max_memory_restart": "300M",
+      "exp_backoff_restart_delay": 100,
+      "cron_restart": "0 */24 * * *",
+      "version": "2.0.0",
+      "ignore_watch": ["node_modules", "start"],
+      "watch_delay": 1000,
+      "max_restarts": 15,
+      "min_uptime": 5000,
+      "wait_ready": true,
+      "listen_timeout": 3000,
+      "env": {
+        "NODE_ENV": "development",
+        "PM2_PUBLIC_KEY": "tdm8mdnq8nslsar",
+        "PM2_PRIVATE_KEY": "7m4cp8hb2p96m0z",
+        "PM2_SECRET_KEY": ""
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "PM2_PUBLIC_KEY": "tdm8mdnq8nslsar",
+        "PM2_PRIVATE_KEY": "7m4cp8hb2p96m0z",
+        "PM2_SECRET_KEY": ""
+      }
+    }
+  ]
+}

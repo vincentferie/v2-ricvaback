@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/gateway/src",
+  "monorepo": true,
+  "root": "apps/gateway",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/gateway/tsconfig.app.json"
+  },
+  "projects": {
+    "gateway": {
+      "type": "application",
+      "root": "apps/gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    },
+    "ms-auth": {
+      "type": "application",
+      "root": "apps/ms-auth",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-auth/tsconfig.app.json"
+      }
+    },
+    "saas-component": {
+      "type": "library",
+      "root": "libs/saas-component",
+      "entryFile": "index",
+      "sourceRoot": "libs/saas-component/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/saas-component/tsconfig.lib.json"
+      }
+    },
+    "ms-admin": {
+      "type": "application",
+      "root": "apps/ms-admin",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-admin/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-admin/tsconfig.app.json"
+      }
+    },
+    "ms-sup": {
+      "type": "application",
+      "root": "apps/ms-sup",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-sup/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-sup/tsconfig.app.json"
+      }
+    },
+    "ms-ops": {
+      "type": "application",
+      "root": "apps/ms-ops",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-ops/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-ops/tsconfig.app.json"
+      }
+    },
+    "ms-fin": {
+      "type": "application",
+      "root": "apps/ms-fin",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-fin/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-fin/tsconfig.app.json"
+      }
+    },
+    "ms-stats": {
+      "type": "application",
+      "root": "apps/ms-stats",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-stats/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-stats/tsconfig.app.json"
+      }
+    },
+    "ms-track": {
+      "type": "application",
+      "root": "apps/ms-track",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-track/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-track/tsconfig.app.json"
+      }
+    },
+    "ms-board": {
+      "type": "application",
+      "root": "apps/ms-board",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-board/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-board/tsconfig.app.json"
+      }
+    },
+    "ms-acc": {
+      "type": "application",
+      "root": "apps/ms-acc",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms-acc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms-acc/tsconfig.app.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.10.5-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    restart: unless-stopped
+    environment:
+      - RABBITMQ_DEFAULT_USER=rabbitmq
+      - RABBITMQ_DEFAULT_PASS=4bed7c9ee26fbac3370f5f5a0e8f0d87ab0e2477
+    ports:
+      # AMQP protocol port
+      - 5672:5672
+      # HTTP management UI
+      - 8085:15672
+    volumes:
+      - data:/var/lib/rabbitmq/
+      - log:/var/log/rabbitmq/
+      - etc:/etc/rabbitmq/
+    networks:
+      - rabbitmq_net
+
+volumes:
+  data:
+  log:
+  etc:
+
+networks:
+  rabbitmq_net:
+    driver: bridge
